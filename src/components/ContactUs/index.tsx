@@ -2,6 +2,7 @@ import { SeletedPage } from "@/App"
 import Htext from "@/shared/Htext"
 import { motion } from "framer-motion"
 import { useForm } from "react-hook-form"
+import { FormEvent } from "react"
 
 type Props = {
   setSeletedPage : ( value : SeletedPage)=> void
@@ -15,10 +16,9 @@ const ContactUs = ({setSeletedPage}: Props) => {
     formState : {errors}
   } = useForm()
 
-  const submitHandler = async ( e : any ) => {
+  const submitHandler = async ( e : FormEvent<HTMLFormElement> ) => {
     const isValid = await trigger()
     if (!isValid) {
-      // e?.preventDefault()
       e.preventDefault()      
     }
   }
