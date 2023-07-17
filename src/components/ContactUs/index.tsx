@@ -2,7 +2,6 @@ import { SeletedPage } from "@/App"
 import Htext from "@/shared/Htext"
 import { motion } from "framer-motion"
 import { useForm } from "react-hook-form"
-import  ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png"
 
 type Props = {
   setSeletedPage : ( value : SeletedPage)=> void
