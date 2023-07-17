@@ -3,6 +3,8 @@ import Navbar from "./components/navbar"
 import Home from "./components/home"
 import Benefits from "./components/benefits"
 import OurClasses from "./components/ourclasses"
+import ContactUs from "./components/ContactUs"
+import Footer from "./components/footer"
 
 export enum SeletedPage {
   Home = "home",
@@ -34,6 +36,8 @@ useEffect(()=>{
       <Home setSeletedPage={setSeletedPage}/>
       <Benefits setSeletedPage={setSeletedPage}/>
       <OurClasses setSeletedPage={setSeletedPage}/>
+      <ContactUs setSeletedPage={setSeletedPage} />
+      <Footer/>
     </div>
   )
 }

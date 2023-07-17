@@ -22,7 +22,7 @@ const Navbar = ({isTopOfPage,seletedPage, setSeletedPage}: Props) => {
 
   return (
     <>
-    <nav className={`${navbarBackground} ${flexBetween} py-6 z-30 fixed top-0 w-full`}>
+    <nav className={`${navbarBackground} ${flexBetween} py-6 z-50 fixed top-0 w-full`}>
       <div className={`${flexBetween}  w-5/6 mx-auto`}>
         <div className={`${flexBetween} w-full gap-16`} >
               {/* left-side Navbar */}
@@ -53,7 +53,7 @@ const Navbar = ({isTopOfPage,seletedPage, setSeletedPage}: Props) => {
               />
             </div>
             <div className={`${flexBetween} gap-8`}> 
-              <p className='cursor-pointer rounded-lg px-4 py-2 bg-red-500 hover:bg-primary-500 text-primary-100 transition duration-500 select-none'>Sign In</p>
+              <p className='cursor-pointer '>Sign In</p>
               <ActionButton setSeletedPage={setSeletedPage}>Become a Member</ActionButton>
             </div>
            </div>
@@ -66,7 +66,7 @@ const Navbar = ({isTopOfPage,seletedPage, setSeletedPage}: Props) => {
     {/* MOBILE MENU MODAL */}
     {
       isMenuToggled && (
-        <div className='md:hidden fixed right-0 bottom-0 z-40 h-full w-[300px] sm:w-[420px] bg-primary-100 drop-shadow-xl'>
+        <div className='md:hidden fixed right-0 bottom-0 z-50 h-full w-[300px] sm:w-[420px] bg-primary-100 drop-shadow-xl'>
           {/* CLOSE BUTTON */}
           <div className='flex justify-end p-8 pr-10 sm:pr-20'>
             <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
